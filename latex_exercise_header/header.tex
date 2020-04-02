@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper,oneside,ngerman]{article} 
+\usepackage[left=3cm,right=3cm,top=2.5cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{ngerman}
+\usepackage{enumerate}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+\usetikzlibrary{arrows,automata,backgrounds,calc,decorations,decorations.text,intersections,matrix,mindmap,patterns,shadings,shapes,shapes.gates.logic.US}
+
+\pagestyle{fancy}
+\setlength{\headheight}{20pt}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.25em}
+
+%Variables
+\def \module                {<++>}
+\def \moduleShort			{<++>}
+\def \documentTitle       	{<++>}
+
+\def \tutor 				{<++>}
+\def \tutorium              {<++>}
+\def \DayTime				{<++>}
+
+\def \group                 {<++>}
+
+\def \memberOne             {<++>}
+\def \memberOneMatricle     {<++>}
+
+\def \memberTwo             {<++>}
+\def \memberTwoMatricle     {<++>}
+
+\def \memberThree           {<++>}
+\def \memberThreeMatricle   {<++>}
+
+\fancyhead[R]{\moduleShort, \documentTitle, \tutor}
+\fancyhead[L]{\memberOne, \memberTwo, \memberThree}
+ 
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+\renewcommand{\maketitle}{\begin{multicols}{2}
+		\hspace{-1cm}
+		\begin{tabular}{ll}
+			Gruppe: & \group \\
+			Autoren: & \memberOneMatricle \ \memberOne \\
+            & \memberTwoMatricle \ \memberTwo \\
+            & \memberThreeMatricle \ \memberThree
+		\end{tabular}
+        \columnbreak
+        
+		\hspace{-1cm}
+		\raggedleft 
+		\begin{tabular}{ll}
+            Tutorium: &  \ \tutorium \\
+            Tutor: & \ \tutor \\
+            Zeit: & \ \DayTime \\
+		\end{tabular}
+    \end{multicols}
+    
+	\begin{center}
+		\Large{\module} \\
+		\LARGE{\documentTitle} \\
+        \small
+        \begin{tabular}{|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|}
+			\hline <++> & <++> & <++> & <++> & $\sum\limits^{ }$ \\ \hline	
+			&&&& \\  \hline
+		\end{tabular}
+    \end{center}
+    \linia
+}
+
+\begin{document}
+	\thispagestyle{plain}
+	\maketitle
+
+	<++>
+
+\end{document}

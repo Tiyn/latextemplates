@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper,ngerman]{article}
+\usepackage[left=3cm,right=3cm,top=2.5cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber, style=authoryear-icomp]{biblatex}
+\usepackage{ot-tableau}
+\usepackage{easylist}
+\usepackage{hanging}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{tipa}
+\usepackage{cgloss4e}
+\usepackage{gb4e}
+\usepackage{qtree}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{textgreek}
+
+\addbibresource{uni}
+
+\title      {<++>}
+\author     {<++>}
+\date       {<++>}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.25em}
+
+\pagenumbering{gobble}
+
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+\makeatletter
+\renewcommand{\maketitle}{\begin{center}
+\huge \@title\end{center}
+{\large\@author\hfill\@date\\}
+\linia\\}
+
+\begin{document}
+
+    \maketitle
+
+    <++>
+
+    \newpage
+    \printbibliography
+\end{document}

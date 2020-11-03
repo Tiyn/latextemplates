@@ -1,5 +1,5 @@
 # LaTeX Templates
-General LaTeX Templates i use.
+General LaTeX templates I use.
 
 ## Table of Content
 

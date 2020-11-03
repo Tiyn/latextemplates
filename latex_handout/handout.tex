@@ -15,12 +15,14 @@
 \usepackage{enumerate}
 \usepackage{longtable}
 \usepackage{textgreek}
+\usepackage{amsmath}
+
 
 \addbibresource{uni}
 
-\title      {<++>}
-\author     {<++>}
-\date       {<++>}
+\title      {}
+\author     {}
+\date       {}
 
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.25em}
@@ -30,16 +32,14 @@
 \newcommand{\linia}{\rule{\linewidth}{0.5pt}}
 \makeatletter
 \renewcommand{\maketitle}{\begin{center}
-\huge \@title\end{center}
+	\huge \@title\end{center}
 {\large\@author\hfill\@date\\}
 \linia\\}
 
 \begin{document}
 
-    \maketitle
+\maketitle
 
-    <++>
-
-    \newpage
-    \printbibliography
+\newpage
+\printbibliography
 \end{document}

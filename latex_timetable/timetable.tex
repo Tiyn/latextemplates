@@ -15,93 +15,86 @@
 \definecolor{darkgreen}{rgb}{0,0.3,0}
 
 \begin{document}
-	\thispagestyle{empty}
+\thispagestyle{empty}
 
-	\begin{center}
+\begin{center}
 
-		%Header
-		\noindent\printheading{Stundenplan, WS '19, Bachelor Informatik}
+	%Header
+	\noindent\printheading{Stundenplan, WS '19, Bachelor Informatik}
 
-		% Define the layout of your time tables
-		\setslotsize{3.2cm}{0.36cm}
-		\setslotcount{5}{40}
-		\settopheight{3}
-		\settextframe{0.8mm}
-		\setbottomstyle{\large}
-		\setbottomspace{11pt}
-		%\setprinttimestamps{2}
-		%\setframetype[t]{1}
-		\seteventcornerradius{0pt}
-		\definecolor{ttframecol2}{rgb}{0.7,0.7,0.7}
+	% Define the layout of your time tables
+	\setslotsize{3.2cm}{0.36cm}
+	\setslotcount{5}{40}
+	\settopheight{3}
+	\settextframe{0.8mm}
+	\setbottomstyle{\large}
+	\setbottomspace{11pt}
+	%\setprinttimestamps{2}
+	%\setframetype[t]{1}
+	\seteventcornerradius{0pt}
+	\definecolor{ttframecol2}{rgb}{0.7,0.7,0.7}
 
-		% Define module types
-		%module1
-		\defineevent{inf004}%name
-			{0.6}{0.0}{0.0}%rgb field
-			{1.0}{1.0}{1.0}%rgb text
-		%module2
-		\defineevent{inf005}
-			{0.6}{0.6}{0.0}
-			{1.0}{1.0}{1.0}
-		%module3
-		\defineevent{inf007}
-			{0.8}{0.4}{0.0}
-			{1.0}{1.0}{1.0}
-		%module4
-		\defineevent{inf401}
-			{1.0}{0.0}{0.0}
-			{1.0}{1.0}{1.0}
-		%module5
-		\defineevent{mat310}
-			{0.0}{0.4}{0.4}
-			{1.0}{1.0}{1.0}
-		%module6
-		\defineevent{pb036}
-			{0.0}{0.4}{0.0}
-			{1.0}{1.0}{1.0}
+	% Define module types
+	%module1
+	\defineevent{inf004}%name
+	{0.6}{0.0}{0.0}%rgb field
+	{1.0}{1.0}{1.0}%rgb text
+	%module2
+	\defineevent{inf005}
+	{0.6}{0.6}{0.0}
+	{1.0}{1.0}{1.0}
+	%module3
+	\defineevent{inf007}
+	{0.8}{0.4}{0.0}
+	{1.0}{1.0}{1.0}
+	%module4
+	\defineevent{inf401}
+	{1.0}{0.0}{0.0}
+	{1.0}{1.0}{1.0}
+	%module5
+	\defineevent{mat310}
+	{0.0}{0.4}{0.4}
+	{1.0}{1.0}{1.0}
+	%module6
+	\defineevent{pb036}
+	{0.0}{0.4}{0.0}
+	{1.0}{1.0}{1.0}
 
-		% Start the time table
-		\begin{timetable}
-			\hours{8}{15}{1}
-			\germandays{1}
+	% Start the time table
+	\begin{timetable}
+		\hours{8}{15}{1}
+		\germandays{1}
 
-			%day, time start, time end, name, type, room, module
-			%Monday
-			\event{1}{1015}{1145}{\large{mat310: Statistik}}{Vorlesung}{W01 0-015}{mat310}
-			\event{1}{1215}{1345}{\large{inf004: Softwareprojekt}}{Vorlesung}{A07 0-030}{inf004}
+		%day, time start, time end, name, type, room, module
+		%Monday
+		\event{1}{1015}{1145}{\large{mat310: Statistik}}{Vorlesung}{W01 0-015}{mat310}
+		\event{1}{1215}{1345}{\large{inf004: Softwareprojekt}}{Vorlesung}{A07 0-030}{inf004}
 
 
-			%Tuesday
-			%\event{2}{0900}{1000}{\large{inf005: SoTech I}}{Tutorium}{A03 4-402}{inf005}
-			\event{2}{1000}{1200}{\large{inf004: Softwareprojekt}}{Tutorium}{A02 3-334}{inf004}
-			\event{2}{1215}{1345}{\large{pb036: Logik}}{Vorlesung}{A14 1-101}{pb036}
+		%Tuesday
+		%\event{2}{0900}{1000}{\large{inf005: SoTech I}}{Tutorium}{A03 4-402}{inf005}
+		\event{2}{1000}{1200}{\large{inf004: Softwareprojekt}}{Tutorium}{A02 3-334}{inf004}
+		\event{2}{1215}{1345}{\large{pb036: Logik}}{Vorlesung}{A14 1-101}{pb036}
 
-			%Wednesday
-			\event{3}{0815}{0945}{\large{inf007: Informationssysteme I}}{Vorlesung}{A11 1-101}{inf007}
-			\event{3}{1000}{1100}{\large{inf401: TheoInf}}{Tutorium}{A03 4-403}{inf401}
+		%Wednesday
+		\event{3}{0815}{0945}{\large{inf007: Informationssysteme I}}{Vorlesung}{A11 1-101}{inf007}
+		\event{3}{1000}{1100}{\large{inf401: TheoInf}}{Tutorium}{A03 4-403}{inf401}
 
-			%Thursday
-			\event{4}{0830}{1000}{\large{inf005: Softwaretechnik I}}{Vorlesung}{A14 1-102}{inf005}
-			%\event{4}{1000}{1100}{\large{mat310: Statistik}}{Vorlesung}{W32 0-005}{mat310}
-			%\event{4}{1100}{1200}{\large{mat310: Statistik}}{Tutorium}{W32 0-005}{mat310}
-			\event{4}{1015}{1145}{\large{inf401: Theoretische Informatik}}{Vorlesung}{A11 1-101}{inf401}
-			\event{4}{1615}{1745}{\large{inf007: Informationssysteme I}}{Vorlesung}{A11 1-101}{inf007}
+		%Thursday
+		\event{4}{0830}{1000}{\large{inf005: Softwaretechnik I}}{Vorlesung}{A14 1-102}{inf005}
+		%\event{4}{1000}{1100}{\large{mat310: Statistik}}{Vorlesung}{W32 0-005}{mat310}
+		%\event{4}{1100}{1200}{\large{mat310: Statistik}}{Tutorium}{W32 0-005}{mat310}
+		\event{4}{1015}{1145}{\large{inf401: Theoretische Informatik}}{Vorlesung}{A11 1-101}{inf401}
+		\event{4}{1615}{1745}{\large{inf007: Informationssysteme I}}{Vorlesung}{A11 1-101}{inf007}
 
-			%Friday
-			\event{5}{0815}{0945}{\large{pb036: Logik}}{Tutorium}{A14 1-101}{pb036}
-			\event{5}{1015}{1145}{\large{inf005: Softwaretechnik I}}{Vorlesung}{A14 1-102}{inf005}
-			\event{5}{1415}{1545}{\large{inf401: Theoretische Informatik}}{Vorlesung}{A07 0-030}{inf401}
+		%Friday
+		\event{5}{0815}{0945}{\large{pb036: Logik}}{Tutorium}{A14 1-101}{pb036}
+		\event{5}{1015}{1145}{\large{inf005: Softwaretechnik I}}{Vorlesung}{A14 1-102}{inf005}
+		\event{5}{1415}{1545}{\large{inf401: Theoretische Informatik}}{Vorlesung}{A07 0-030}{inf401}
 
-		\end{timetable}
-	\end{center}
+	\end{timetable}
+\end{center}
 
-	\hfill
-
-	%Additional Information
-	\begin{itemize}
-		\item \large{zeitgleich Donnerstag: 10-11 Uhr mat310: Statistik VL wöchentlich W32 0-005}
-		\item \large{zeitgleich Donnerstag: 11-12 Uhr mat310: Statistik TU wöchentlich W32 0-005}
-		\item \large{zeitgleich Freitag: 09-10 Uhr inf007: Informationssysteme I TU wöchentlich A03 4-403}
-	\end{itemize}
+\hfill
 
 \end{document}
